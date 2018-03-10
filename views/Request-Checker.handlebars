@@ -1,0 +1,28 @@
+<h1>{{RequestType}} Request Received</h1>
+<fieldset>
+    <legend>URL Query</legend>
+    <table>
+        <tbody>
+        {{#each URLList}}
+            <tr>
+                <th>{{this.name}}</th>
+                <td>{{this.value}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>Request Body</legend>
+    <table>
+        <tbody>
+        {{#each BodyList}}
+            <tr>
+                <th>{{this.name}}</th>
+                <td>{{this.value}}</td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</fieldset>
+
